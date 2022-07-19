@@ -1,0 +1,14 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'libs/icofonts';
+// @import 'libs/animate.min';
+
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+	font-family:'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
