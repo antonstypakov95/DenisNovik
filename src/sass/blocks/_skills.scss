@@ -1,0 +1,50 @@
+.skills {
+	min-height: 610px;
+	padding: 90px 0 110px 0;
+	h3 {
+		margin-top: 60px;
+	}
+	&__wrapper {
+		display: flex;
+		margin-top: 80px;
+		justify-content: space-between;
+		
+	}
+	&__item {
+		width: 167px;
+	}
+	&__img {
+		display: block;
+		margin: 0 auto;
+		&_1 {
+			background: radial-gradient(75.99% 75.64% at 32.94% 22.44%, rgba(52, 54, 78, 0.98) 0%, #0C0824 100%);
+		}
+		&_2 {
+			background: radial-gradient(76% 75.63% at 32.97% 22.44%, rgba(66, 51, 37, 0.98) 0%, #1C0A00 100%);
+		}
+		&_3 {
+			background: radial-gradient(76% 75.63% at 32.97% 22.42%, rgba(68, 47, 85, 0.98) 0%, #12002C 100%);
+		}
+
+	}
+	&__descr {
+		margin-top: 23px;
+		text-align: center;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 17px;
+		color: #828282;
+	}
+	&__grade {
+		margin-top: 35px;
+		display: flex;
+		justify-content: space-between;
+		img {
+			display: block;
+		}
+		&_mt {
+			margin-top: 52px;
+		}
+	}
+
+}

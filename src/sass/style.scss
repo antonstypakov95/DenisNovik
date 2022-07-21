@@ -7,8 +7,37 @@
 @import 'base/mixins';
 
 * {
-	font-family:'Montserrat', sans-serif;
+	font-family:'Gilroy', sans-serif;
 	margin: 0;
 	padding: 0;
 }
 
+.container {
+	position: relative;
+	width: 950px;
+	margin: 0 auto;
+}
+
+a {
+	&:hover {
+		text-decoration: none;
+		color: #000;
+	}
+}
+h1 {
+	margin-bottom: 0;
+}
+h2 {
+	margin-bottom: 0;
+}
+h3 {
+	margin-bottom: 0;
+}
+
+
+@import 'blocks/header';
+@import 'blocks/title';
+@import 'blocks/about';
+@import 'blocks/skills';
+@import 'blocks/portfolio';
+@import 'blocks/footer';

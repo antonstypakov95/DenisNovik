@@ -1,0 +1,22 @@
+.portfolio {
+	min-height: 2253px;
+	padding: 113px 0 96px 0;
+	background-color: #F6F6F6;
+	&__wrapper {
+		margin-top: 47px;
+	}
+	&__item {
+		margin-top: 95px;
+		&_nmt{
+			margin-top: 0;
+		}
+		img {
+			width: 100%;
+		}
+		a {
+			display: block;
+			margin-top: 40px;
+			text-decoration: underline;
+		}
+	}
+}

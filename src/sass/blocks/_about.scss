@@ -1,0 +1,12 @@
+.about {
+	min-height: 506px;
+	background: #F6F6F6;
+	padding: 120px 0 107px 0;
+	&__wrapper {
+		height: 218px;
+		margin-top: 18px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}

@@ -1,0 +1,57 @@
+.header {
+	min-height: 768px;
+	.divider {
+		height: 1px;
+		width: 100%;
+		background-color: #828282;
+	}
+	&__wrapper {
+		position: relative;
+		height: 118px;
+		margin-top: 30px;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	&__photo {
+		display: block;
+		margin-top: 50px;
+		width: 100%;
+	}
+	&__name {
+		span {
+			display: block;
+			margin-top: 25px;
+		}
+	}
+
+	&__lang {
+		position: relative;
+		transform: rotate(-90deg);
+		bottom: 30px;
+		right: -25px;
+		a {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 20px;
+		color: #828282;
+		}
+		.black {
+			color:#000;
+		}
+	}
+}
+
+nav {
+	position: relative;
+	height: 88px;
+}
+.menu {
+	display: flex;
+	list-style-type: none;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	margin-bottom: 0;
+}

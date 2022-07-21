@@ -1,0 +1,45 @@
+.footer {
+	min-height: 622px;
+	padding: 114px 0 123px 0;
+	h3 {
+		margin-top: 20px;
+	}
+	&__btn {
+		display: block;
+		margin: 30px auto 0 auto;
+		width: 180px;
+		height: 42px;
+		background-color: #000000;
+		border-radius: 50px;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 22px;
+		color: #FFFFFF;
+	}
+	&__socials {
+		margin: 86px auto 0 auto;
+		width: 342px;
+		display: flex;
+		justify-content: space-between;
+		a {
+			color: #000;
+		}
+		span {
+			display: block;
+			font-size: 40px;
+		}
+	}
+	&__links {
+		margin: 45px auto 0 auto;
+		width: 243px;
+		font-family: 500;
+		font-size: 14px;
+		line-height: 17px;
+		text-align: center;
+		color: #828282;
+		a {
+			color: #828282;
+		}
+	}
+
+}

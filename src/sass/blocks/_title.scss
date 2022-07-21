@@ -1,0 +1,27 @@
+.title {
+	font-weight: 700;
+	font-size: 34px;
+	line-height: 42px;
+	text-align: center;
+	color: #070707;
+	&_big {
+		font-size: 47px;
+		line-height: 40px;
+	}
+	&_list {
+		font-size: 18px;
+		line-height: 22px;
+		&-grey {
+			color: #828282;
+		}
+	}
+}
+
+.subtitle {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	color: #070707;
+	
+}
