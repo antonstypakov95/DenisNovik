@@ -21,3 +21,23 @@ $(document).ready(function(){
         } // End if
       });
 });
+
+const hamburger = document.querySelector('.hamburger'),
+      menu = document.querySelector('.nav'),
+      closeElem = document.querySelector('.nav__close'),
+      menuItem = document.querySelectorAll('.menu__item');
+
+hamburger.addEventListener('click', () => {
+    menu.classList.add('active');
+});
+closeElem.addEventListener('click', () => {
+    menu.classList.remove('active');
+});
+
+
+menuItem.forEach(item => {
+  item.addEventListener('click', () => {
+      menu.classList.remove('active');
+  })
+});
+

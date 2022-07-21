@@ -12,7 +12,16 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<nav>
+			<div class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<nav class="nav">
+				<div class="nav__close">
+					<span></span>
+					<span></span>
+				</div>
 				<ul class="menu">
 					<li class="menu__item"><a href="#" class="title title_list" >Home</a></li>
 					<li class="menu__item"><a href="#about" class="title title_list title_list-grey">About me</a></li>
@@ -20,25 +29,36 @@
 					<li class="menu__item"><a href="#portfolio" class="title title_list title_list-grey">Portfolio</a></li>
 					<li class="menu__item"><a href="#contacts" class="title title_list title_list-grey">Contacts</a></li>
 				</ul>
+				<div class="nav__lang "> 
+					<a href="#" class="grey">RU</a> | <a href="#" class="black">ENG</a>
+				</div>
 			</nav>
 			<div class="divider"></div>
 			<div class="header__wrapper">
 				<h1 class="header__name title title_big">Denis <br> <span>Novik</span></h1>
 				<div class="header__descr subtitle">UX | UI designer <br>24 years old, Minsk</div>
-				<div class="header__lang"> 
+				<div class="header__lang xs-hidden"> 
 					<a href="#" class="grey">RU</a> | <a href="#" class="black">ENG</a>
 				</div>
 			</div>
-			<img src="img/main-photo.png" alt="photo" class="header__photo">
+		
+			<picture class="header__photo">
+				<source type="image/webp" media="(max-width:576px)" srcset="img/main_photo-xs.webp">
+				<source type="image/webp" media="(min-width:577px)" srcset="img/main_photo.webp">
+				<source media="(max-width:576px)" srcset="img/main_photo-xs.png">
+				<source media="(min-width:577px)" srcset="img/main_photo.png">
+				<img src="img/main_photo.png" alt="photo">
+			</picture>
+			
 		</div>
 	</header>
 	<section class="about" id="about">
 		<div class="container">
 			<h2 class="title">About me</h2>
 			<div class="about__wrapper">
-				<div class="subtitle">Hi, I'm Denis – UX/UI designer from Minsk. <br> I'm interested in design and everything connected with it.</div>
-				<div class="subtitle">I'm studying at courses "Web and mobile design <br> interfaces" in IT-Academy.</div>
-				<div class="subtitle">Ready to implement excellent projects <br> with wonderful people.</div>
+				<div class="subtitle">Hi, I'm Denis – UX/UI designer from Minsk.  I'm interested in design and everything connected with it.</div>
+				<div class="subtitle">I'm studying at courses "Web and mobile design  interfaces" in IT-Academy.</div>
+				<div class="subtitle">Ready to implement excellent projects with wonderful people.</div>
 			</div>
 		</div>
 	</section>
@@ -47,7 +67,7 @@
 			<h2 class="title">Skills</h2>
 			<h3 class="subtitle">I work in such programs as</h3>
 			<div class="skills__wrapper">
-				<div class="skills__item">
+				<div class="skills__item skills__item_1">
 					<img src="icons/skills/PS.svg" alt="photoshop" class="skills__img skills__img_1">
 					<div class="skills__descr">Adobe <br> Photoshop</div>
 					<div class="skills__grade">
@@ -58,7 +78,7 @@
 						<img src="icons/skills/gray-star.svg" alt="star">
 					</div>
 				</div>
-				<div class="skills__item">
+				<div class="skills__item skills__item_2">
 					<img src="icons/skills/adobe.svg" alt="Adobe-Illustrator" class="skills__img skills__img_2">
 					<div class="skills__descr">Adobe <br>
 						Illustrator</div>
@@ -70,7 +90,7 @@
 						<img src="icons/skills/gray-star.svg" alt="star">
 					</div>
 				</div>
-				<div class="skills__item">
+				<div class="skills__item skills__item_3">
 					<img src="icons/skills/adobe-ae.svg" alt="Adobe-After Effects" class="skills__img skills__img_3">
 					<div class="skills__descr">Adobe  <br>
 						After Effects</div>
@@ -82,7 +102,7 @@
 						<img src="icons/skills/gray-star.svg" alt="star">
 					</div>
 				</div>
-				<div class="skills__item">
+				<div class="skills__item skills__item_4">
 					<img src="icons/skills/Figma.svg" alt="Figma" class="skills__img">
 					<div class="skills__descr">Figma</div>
 					<div class="skills__grade skills__grade_mt">
@@ -102,15 +122,24 @@
 			<h2 class="title">Portfolio</h2>
 			<div class="portfolio__wrapper">
 				<div class="portfolio__item portfolio__item_nmt">
-					<img src="img/portfolio/new-collection.png" alt="new-collection">
+					<picture>
+						<source type="image/webp"  srcset="img/portfolio/new-collection.webp">
+						<img src="img/portfolio/new-collection.png" alt="new-collection">
+					</picture>
 					<a href="#" class="subtitle">Online fashion store - Homepage</a>
 				</div>
 				<div class="portfolio__item">
-					<img src="img/portfolio/reebok.png" alt="reebok">
+					 <picture>
+						<source type="image/webp"  srcset="img/portfolio/reebok.webp">
+						<img src="img/portfolio/reebok.png" alt="reebok">
+					 </picture>
 					<a href="#" class="subtitle">Reebok Store - Concept</a>
 				</div>
 				<div class="portfolio__item">
-					<img src="img/portfolio/braun.png" alt="braun">
+					<picture>
+						<source type="image/webp"  srcset="img/portfolio/braun.webp">
+						<img src="img/portfolio/braun.png" alt="braun">
+					</picture>
 					<a href="#" class="subtitle">Braun Landing Page - Concept</a>
 				</div>
 			</div>

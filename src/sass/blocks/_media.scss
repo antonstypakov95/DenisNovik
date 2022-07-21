@@ -1,0 +1,285 @@
+@media (max-width:992px) {
+	.container {
+		max-width: 720px;
+	}
+	.header {
+		min-height: 675px;
+	}
+	.skills {
+		&__item {
+			width: 150px;
+		}
+	}
+	.portfolio {
+		min-height: 1868px;
+	}
+}
+
+@media (max-width:768px) {
+	.container {
+		max-width: 540px;
+	}
+	.title {
+		font-size: 32px;
+		line-height: 38px;
+		&_big {
+			font-size: 40px;
+			line-height: 32px;
+		}
+		&_list {
+			font-size: 16px;
+			line-height: 20px;
+		}
+	}
+	.subtitle {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.header {
+		min-height: 510px;
+		padding-bottom: 50px;
+		&__wrapper {
+			height: 80px;
+		}
+		&__photo {
+			margin-top: 35px;
+		}
+		&__name {
+			span {
+				margin-top: 15px;
+			}
+		}
+		&__lang {
+			bottom: 24px;
+		}
+	}
+	.about {
+		padding: 50px 0 50px 0;
+		min-height: 375px;
+		&__wrapper {
+			width: 320px;
+		}
+	}
+	.skills {
+		padding: 50px 0 50px 0;
+		h3 {
+			margin-top: 35px;
+		}
+		&__wrapper {
+			margin-top: 50px;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+		&__item {
+			&_4 {
+				margin-top: 35px;
+			}
+		}
+		&__grade {
+			margin-top: 25px;
+		}
+	}
+	.portfolio {
+		padding: 50px 0 50px 0;
+		min-height: 1350px;
+		&__wrapper {
+			margin-top: 40px;
+		}
+		&__item {
+			margin-top: 70px;
+			&_nmt {
+				margin-top: 0;
+			}
+			a {
+				margin-top: 25px;
+			}
+		}
+	}
+	.footer {
+		min-height: 440px;
+		padding: 50px 0 50px 0;
+		&__socials {
+			margin: 65px auto 0 auto;
+		}
+		&__links {
+			margin: 30px auto 0 auto;
+		}
+	}
+
+}
+
+@media (max-width:576px) {
+	.container {
+		width: 100%;
+		padding: 0 10px;
+	}
+	.title {
+		font-size: 34px;
+		line-height: 42px;
+		&_big {
+			font-size: 47px;
+			line-height: 58px;
+		}
+	}
+	.subtitle {
+		font-size: 18px;
+		line-height: 22px;
+	}
+	.header {
+		min-height: 800px;
+		padding: 55px 0 83px 0;
+		.divider {
+			display: none;
+		}
+		&__wrapper {
+			margin-top: 0;
+			flex-direction: column;
+			align-items: start;
+			height: 173px;
+			width: 85%;
+		}
+		&__name {
+			span {
+				margin-top: 0;
+			}
+		}
+
+	}
+	.xs-hidden {
+		display: none;
+	}
+
+	.hamburger {
+		display: flex;
+	}
+	.nav {
+		padding: 55px 28px 130px 16px;
+		height: 100vh;
+		position: fixed;
+		top:0;
+		left: -100%;
+		z-index: 5;
+		background-color: #fff;
+		width: 100%;
+		transition: all 0.6s;
+
+		&__lang {
+			display: block;
+			position: absolute;
+			font-size: 25px;
+			bottom: 13%;
+			right: -15px;
+			transform: rotate(90deg);
+			a {
+			font-weight: 700;
+			font-size: 25px;
+			line-height: 25px;
+			color: #828282;
+			}
+			.black {
+				color:#000;
+			}
+		}
+
+		&__close {
+			position: absolute;
+			right: 25px;
+			top: 75px;
+			display: block;
+			width: 25px;
+			height: 25px;
+			span {
+				display: block;
+				width: 100%;
+				height: 4px;
+				background-color: #828282;
+				margin-bottom: -4px;
+				&:nth-child(1){
+					transform: rotate(-45deg);
+				}
+				&:nth-child(2){
+					transform: rotate(45deg);
+				}
+			}
+	
+		}
+		
+	}
+	.menu {
+		flex-direction: column;
+		align-items: start;
+		justify-content: space-between;
+		max-height: 370px;
+		&__item {
+			width: 80%;
+			padding: 8px 0;
+			a {
+				display: block;
+				text-align: left;
+			}
+		}
+	}
+
+	.about {
+		min-height: 491px;
+		padding: 81px 0 76px 0;
+		&__wrapper {
+			height: 261px;
+			margin-top: 30px;
+			width: 300px;
+		}
+	}
+	.skills {
+		min-height: 1360px;
+		padding: 81px 0 98px 0;
+		h3 {
+			margin-top: 50px;
+		}
+		&__wrapper {
+			margin-top: 70px;
+			flex-direction: column;
+			align-items: center;
+		}
+		&__item {
+			width: 166px;
+			margin-top: 80px;
+			&_1 {
+				margin-top: 0;
+			}
+		}
+	}
+	.portfolio {
+		min-height: 1060px;
+		padding: 80px 0;
+		&__wrapper {
+			margin-top: 64px;
+		}
+		&__item {
+			margin-top: 77px;
+			&_nmt {
+				margin-top: 0;
+			}
+			picture {
+				img {
+					object-fit: cover;
+				}
+			}
+		}
+	}
+	.footer {
+		min-height: 522px;
+		padding: 82px 0 90px 0;
+		&__btn {
+			margin: 40px auto 0 auto;
+			width: 300px;
+		}
+		&__socials {
+			margin: 48px auto 0 auto;
+			width: 300px;
+		}
+		&__links {
+			margin: 40px auto 0 auto;
+		}
+	}
+
+}
